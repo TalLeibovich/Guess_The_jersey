@@ -1,0 +1,14 @@
+# קבצי מערכת
+.DS_Store
+Thumbs.db
+
+# קבצי cPanel / גיבויים
+backup-*/
+tmp/
+cgi-bin/
+
+# פרטי גישה רגישים
+/public/db_connect.php
+
+# לוגים
+*.log

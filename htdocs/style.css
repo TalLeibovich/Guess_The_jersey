@@ -1,0 +1,210 @@
+/* בסיס */
+body {
+  background-image: url('images/grass.jpg');
+   background-size: cover;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  direction: rtl;
+  text-align: center;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ניווט */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav ul.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul.nav-links li {
+  margin: 0 15px;
+}
+nav ul.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+nav ul.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* עיצוב לפי ID */
+#blue-text {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 10px;
+}
+
+/* עיצוב לפי class */
+.highlight-box {
+  background-color: #e0f7fa;
+  border: 1px solid #4dd0e1;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+/* כותרות */
+h1, h2, h3 {
+  margin: 20px 0;
+  font-weight: bold;
+  color: #222;
+}
+
+/* קישורים כלליים */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* טפסים */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="color"],
+input[type="range"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+textarea,
+select {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* כפתורים */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #555;
+}
+
+/* קונטיינרים */
+.container,
+.quiz-container,
+.start-container,
+.result-container,
+.profile {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* תצוגת שאלון */
+#quiz-section img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* טבלה */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: center;
+}
+th {
+  background-color: #f0f0f0;
+}
+
+/* מדיה קוורי - רספונסיביות משופרת */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 95%;
+    padding: 10px 5px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links li {
+    margin: 5px 0;
+  }
+  input, textarea, select, button {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  img {
+    max-width: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+  }
+
+  .container {
+    max-width: 750px;
+    padding: 20px 40px;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  button, input, textarea, select {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 80px;
+  }
+}
+
