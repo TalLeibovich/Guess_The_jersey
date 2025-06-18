@@ -1,10 +1,9 @@
 Guess the Jersey – World Football Shirt Quiz
+Link: https://shani-tal-ruppin.byethost14.com
 An interactive, Hebrew first trivia game where you guess the footballer by his jersey. Built as the final project for the Integrated Software Engineering Workshop at Ruppin Academic Center.
 I do not claim for any rights about the photos.
-________________________________________
-🚀 Live Demo
-A public demo is available here → <LIVE_URL_HERE> 
-________________________________________
+------------------------------------------
+
 📦 Tech Stack
 Layer	Tech
 Front  end	HTML5 · CSS3 · Vanilla JS (ES6) · Responsive RTL design
